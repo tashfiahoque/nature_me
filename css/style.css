@@ -1,0 +1,413 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300&display=swap');
+
+*{
+    outline:none !important;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #F0F2F0 !important;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #000C40, #F0F2F0) !important;  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #000C40, #F0F2F0) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+/*-- header start --*/
+ /*-- navbar start --*/
+header{
+    position: relative;
+    z-index:  1000000;
+}
+p{
+    font-size: 1.15rem;
+}
+.navbar{
+    background: transparent !important;
+    transition: 0.5s;
+    
+}
+.navbar.scrolled{
+    background-color: #6A769C !important;
+    transition: 0.5s;
+}
+.navbar-light .navbar-brand{
+    color: #061245 !important;
+    font-size: 2rem !important;
+    font-weight: 700;
+}
+.navbar-light .navbar-brand:hover{
+    color: blue !important;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #061245 !important;
+    font-size: 1.5rem !important;
+    position: relative;
+
+} 
+.navbar-light .navbar-nav .nav-item{
+    padding: 10px 15px;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus{
+    color: blue !important;
+} 
+
+.navbar-light .navbar-nav .nav-link span:first-child:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    border-top: 2px solid blue;
+    border-left: 2px solid blue;
+    transition: 0.5s;
+    opacity: 0;
+}
+.navbar-light .navbar-nav .nav-link span:first-child:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    border-top: 2px solid blue;
+    border-right: 2px solid blue;
+    transition: 0.5s;
+    opacity: 0;
+}
+.navbar-light .navbar-nav .nav-link span:last-child:before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    border-bottom: 2px solid blue;
+    border-left: 2px solid blue;
+    transition: 0.5s;
+    opacity: 0;
+}
+.navbar-light .navbar-nav .nav-link span:last-child:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    border-bottom: 2px solid blue;
+    border-right: 2px solid blue;
+    transition: 0.5s;
+    opacity: 0;
+}
+.navbar-light .navbar-nav .nav-link:hover span:first-child:before{
+    top: -5px !important;
+    left: -5px !important;
+    opacity: 1;
+}
+.navbar-light .navbar-nav .nav-link:hover span:first-child:after{
+    top: -5px !important;
+    right: -5px !important;
+    opacity: 1;
+}
+.navbar-light .navbar-nav .nav-link:hover span:last-child:before{
+    bottom: -5px !important;
+    left: -5px !important;
+    opacity: 1;
+}
+.navbar-light .navbar-nav .nav-link:hover span:last-child:after{
+    bottom: -5px !important;
+    right: -5px !important;
+    opacity: 1;
+}
+/*-- navbar end --*/
+/*-- banner start --*/
+.banner{
+    position: relative;
+    top: 0;
+    width: 100%;
+    background: url(../images/bg.jpg) no-repeat;
+    background-size: cover;
+    margin-bottom: 0;      
+}
+.banner:before,
+.contact:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(#424B70, transparent);
+    pointer-events: none;
+}
+.banner:after,
+.contact:after{
+    content: "";
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(360deg, #424B70, transparent);
+    pointer-events: none;
+}
+.height100p{
+    height: 100vh;
+}
+.h100{
+    height: 100%;
+}
+.contentBox{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+}
+.contentBox h1{
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #fff;  
+}
+.contentBox p{
+    font-size: 1.5rem;
+    color: #fff;
+}
+/*-- banner end --*/
+/*-- header end ---*/
+/*--- explorestart --*/
+.sec1{
+    padding: 100px 0;
+}
+.headerText{
+     color: #fff;
+}
+.headerText h2{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.placeBox{
+    position: relative;
+    max-width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.placeBox .imgBx{
+    width: 100%;
+    height: 100%;
+}
+.placeBox .imgBx img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.placeBox .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    align-items: flex-end;
+}
+.placeBox .content h3{
+   position: relative;
+   margin: 0;
+   padding: 10px;
+   background: #424B70;
+   color: #fff;
+   font-size: 20px;
+   font-weight: 600;
+   width: 100%;
+   text-align: center;
+}
+.placeBox .content h3 span{
+    font-size: 16px;
+    font-weight: 500;
+}
+/*--- explore end --*/
+/*-- adventure start --*/
+.sec2{
+    position: relative;
+    background: url(../images/bg2.jpg) no-repeat;
+    background-size: cover;  
+    padding: 120px 0;
+}
+.sec2 h2{
+    font-weight: 700;
+    font-size: 3.25rem;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;  
+}
+.btnD1{
+    position: relative;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #fff;
+    border:2px solid #424B70;
+    margin-top: 20px;
+    padding: 15px 50px; 
+    transition: 0.5s !important;
+}
+.btnD1:hover{
+    color: blue !important;
+}
+.btnD1:before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    background: #061245;
+    z-index: -1;
+    transform: scaleX(0);
+    transition: transform 0.5s !important;
+    transform-origin: left;
+}
+.btnD1:hover:before{
+     transform: scaleX(1);
+    transition: transform 0.5s !important;
+    transform-origin: right;
+}
+.btnD1:after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50%;
+    height: 100%;
+    background: #061245;
+    z-index: -1;
+    transform: scaleX(0);
+    transition: transform 0.5s !important;
+    transform-origin: right;
+}
+.btnD1:hover:after{
+     transform: scaleX(1);
+    transition: transform 0.5s !important;
+    transform-origin: left;
+}
+/*-- adventure end ---*/
+/*-- blog start --*/
+.blog{
+    position: relative;
+    padding: 100px 0;
+}
+.blogpost{
+    background: #fff;
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+.blogpost .imgBx{
+    height: 400px;
+}
+.blogpost .imgBx img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.blogpost .content{
+    padding: 15px;
+}
+.blogpost .content h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0 0 10px; 
+}
+.btnD2{
+    position: relative;
+    color: #000;
+    border:2px solid #424B70;
+    border-radius: 30px;
+    padding: 10px 20px;
+    float: right;
+    transition: 0.5s !important;
+}
+.btnD2:hover{
+    color: blue !important;
+    background: #061245;
+    transition: 0.5s ease-in-out !important;
+}
+/*-- blog end --*/
+/*-- contact start --*/
+.contact{
+    position: relative;
+    padding: 100px 0;
+    background: url(../images/bg1.jpg) no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.contact form{
+    position: relative;
+    z-index: 1000;
+}
+.contact .form-control{
+    font-size: 1.25rem;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,.2);
+    border-radius: 0;
+    background: transparent;
+    color: #fff;
+    font-size: 1.25rem;
+}
+.contact .form-control:focus,
+.contact .form-control:hover{
+    border:none;
+    border-bottom: 2px solid rgba(255,255,255,1);
+    box-shadow: none;
+}
+.contact .textarea{
+    min-height: 100px;
+}
+.contact label{
+    color: #fff;
+    font-size: 1.25rem;   
+}
+/*--contact end --*/
+
+/*-- footer start --*/
+footer{
+    padding: 50px 0 0;
+}
+.sci{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sci li{
+    list-style: none;
+    margin: 0 20px;
+}
+.sci li a{
+    color: #777;
+    font-size: 2em;
+    transition: 0.5s;
+}
+.sci li a:hover{
+    color: blue;
+}
+.cprt{
+    color: #777;
+    text-align: center;
+    margin-top: 20px;
+}
+.cprt a,
+.cprt a:hover{
+    color: blue;
+}
+/*-- footer end --*/
